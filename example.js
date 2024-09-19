@@ -18,8 +18,8 @@ const openai = new AzureOpenAI({ azureADTokenProvider });
 
 const response = await openai.chat.completions.create({
   messages: [
-    { role: 'system', content: `You provide very brief and straight to the point answers with emojis.` },
-    { role: 'user', content: `What's the meaning of life?` },
+    { role: 'system', content: `You provide brief and straight to the point answers ending with emojis.` },
+    { role: 'user', content: `Write an haiku about a hungry cat` },
   ],
   temperature: 0.7,
   model: process.env.AZURE_OPENAI_API_DEPLOYMENT_NAME,
