@@ -2,6 +2,7 @@
   "name": "azure-openai-keyless-js",
   "version": "1.0.0",
   "description": "Example Azure OpenAI deployment and RBAC role for your user account for keyless access",
+  "type": "module",
   "private": true,
   "main": "./example.js",
   "module": "./example.js",
@@ -12,11 +13,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Azure-Samples/openai-secure-js.git"
+    "url": "https://github.com/Azure-Samples/azure-openai-keyless-js.git"
   },
-  "homepage": "https://github.com/Azure-Samples/openai-secure-js",
+  "homepage": "https://github.com/Azure-Samples/azure-openai-keyless-js",
   "bugs": {
-    "url": "https://github.com/Azure-Samples/openai-secure-js/issues"
+    "url": "https://github.com/Azure-Samples/azure-openai-keyless-js/issues"
   },
   "keywords": [
     "azure",
