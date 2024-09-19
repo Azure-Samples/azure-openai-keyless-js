@@ -11,7 +11,7 @@
 
 :star: If you like this sample, star it on GitHub — it helps a lot!
 
-[Overview](#overview) • [Getting started](#getting-started) • [Run the sample](#run-the-sample) • [Resources](#resources) • [FAQ](#faq) • [Troubleshooting](#troubleshooting)
+[Overview](#overview) • [Get started](#getting-started) • [Run the sample](#run-the-sample) • [Resources](#resources) • [Troubleshooting](#troubleshooting)
 
 </div>
 
