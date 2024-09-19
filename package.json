@@ -1,7 +1,7 @@
 {
   "name": "azure-openai-keyless-js",
   "version": "1.0.0",
-  "description": "Example keyless Azure OpenAI deployment and RBAC role for your user account for keyless access",
+  "description": "Example Azure OpenAI deployment and RBAC role for your user account for keyless access",
   "private": true,
   "main": "./example.js",
   "module": "./example.js",
