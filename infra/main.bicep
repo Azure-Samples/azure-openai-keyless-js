@@ -28,6 +28,7 @@ param resourceGroupName string = ''
   'uksouth'
   'westeurope'
   'westus'
+  'westus3'
 ])
 @metadata({
   azd: {
@@ -45,6 +46,8 @@ param chatModelName string // Set in main.parameters.json
 param chatDeploymentName string = chatModelName
 
 @description('Version of the model')
+// See version availability in this table:
+// https://learn.microsoft.com/azure/ai-services/openai/concepts/models#standard-deployment-model-availability
 param chatModelVersion string // Set in main.parameters.json
 
 @description('Capacity of the model deployment')
