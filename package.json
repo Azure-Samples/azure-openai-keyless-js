@@ -1,0 +1,49 @@
+{
+  "name": "azure-openai-keyless-js",
+  "version": "1.0.0",
+  "description": "Example keyless Azure OpenAI deployment and RBAC role for your user account for keyless access",
+  "private": true,
+  "main": "./example.js",
+  "module": "./example.js",
+  "scripts": {
+    "start": "node example.js",
+    "format": "prettier --list-different --write .",
+    "format:check": "prettier --list-different ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Azure-Samples/openai-secure-js.git"
+  },
+  "homepage": "https://github.com/Azure-Samples/openai-secure-js",
+  "bugs": {
+    "url": "https://github.com/Azure-Samples/openai-secure-js/issues"
+  },
+  "keywords": [
+    "azure",
+    "openai",
+    "keyless",
+    "secure",
+    "openai"
+  ],
+  "author": "Microsoft",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^3.0.3"
+  },
+  "engines": {
+    "node": ">=20",
+    "npm": ">=10"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": true,
+    "printWidth": 120,
+    "bracketSpacing": true
+  },
+  "dependencies": {
+    "@azure/identity": "^4.4.1",
+    "dotenv": "^16.4.5",
+    "openai": "^4.62.1"
+  }
+}
