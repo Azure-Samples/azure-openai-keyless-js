@@ -36,7 +36,6 @@ param resourceGroupName string = ''
   }
 })
 param location string // Set in main.parameters.json
-param openAiSkuName string = 'S0'
 
 @description('Azure OpenAI API version')
 param openAiApiVersion string // Set in main.parameters.json
@@ -72,15 +71,20 @@ resource resourceGroup 'Microsoft.Resources/resourceGroups@2021-04-01' = {
   tags: tags
 }
 
-module openAi 'core/ai/cognitiveservices.bicep' = {
+module openAi 'br/public:avm/res/cognitive-services/account:0.5.4' = {
   name: 'openai'
   scope: resourceGroup
   params: {
     name: '${abbrs.cognitiveServicesAccounts}${resourceToken}'
     location: location
     tags: tags
-    sku: {
-      name: openAiSkuName
+    kind: 'OpenAI'
+    sku: 'S0'
+    customSubDomainName: '${abbrs.cognitiveServicesAccounts}${resourceToken}'
+    publicNetworkAccess: 'Enabled'
+    networkAcls: {
+      defaultAction: 'Allow'
+      bypass: 'AzureServices'
     }
     disableLocalAuth: true
     deployments: [
@@ -97,21 +101,13 @@ module openAi 'core/ai/cognitiveservices.bicep' = {
         }
       }
     ]
-  }
-}
-
-// Managed identity roles assignation
-// ---------------------------------------------------------------------------
-
-// User roles
-module openAiRoleUser 'core/security/role.bicep' = if (!isContinuousDeployment) {
-  scope: resourceGroup
-  name: 'openai-role-user'
-  params: {
-    principalId: principalId
-    // Cognitive Services OpenAI User
-    roleDefinitionId: '5e0bd9bd-7b93-4f28-af87-19fc36ad61bd'
-    principalType: 'User'
+    roleAssignments: isContinuousDeployment ? [] : [
+      {
+        principalId: principalId
+        roleDefinitionIdOrName: 'Cognitive Services OpenAI User'
+        principalType: 'User'
+      }
+    ]
   }
 }
 
