@@ -71,7 +71,7 @@ resource resourceGroup 'Microsoft.Resources/resourceGroups@2021-04-01' = {
   tags: tags
 }
 
-module openAi 'br/public:avm/res/cognitive-services/account:0.5.4' = {
+module openAi 'br/public:avm/res/cognitive-services/account:0.7.1' = {
   name: 'openai'
   scope: resourceGroup
   params: {
