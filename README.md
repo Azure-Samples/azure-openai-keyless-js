@@ -113,6 +113,8 @@ Here are some resources to learn more about Azure OpenAI and related technologie
 - [Azure OpenAI Service](https://learn.microsoft.com/azure/ai-services/openai/overview)
 - [Chat + Enterprise data with Azure OpenAI and Azure AI Search](https://github.com/Azure-Samples/azure-search-openai-javascript)
 
+You can also find [more Azure AI samples here](https://github.com/Azure-Samples/azureai-samples).
+
 ## Troubleshooting
 
 If you have any issue when running or deploying this sample, please check the [troubleshooting guide](./docs/troubleshooting.md). If you can't find a solution to your problem, please [open an issue](https://github.com/Azure-Samples/azure-openai-keyless-js/issues) in this repository.
