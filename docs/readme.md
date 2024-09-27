@@ -24,6 +24,9 @@ This sample shows how to to provision an [Azure OpenAI](https://learn.microsoft.
 - [Node.js LTS](https://nodejs.org/download/)
 - [Azure Developer CLI](https://aka.ms/azure-dev/install)
 - [Git](https://git-scm.com/downloads)
+- [PowerShell 7+](https://github.com/powershell/powershell) _(for Windows users only)_
+  - **Important**: Ensure you can run `pwsh.exe` from a PowerShell command. If this fails, you likely need to upgrade PowerShell.
+  - Instead of Powershell, you can also use Git Bash or WSL to run the Azure Developer CLI commands.
 - Azure account. If you're new to Azure, [get an Azure account for free](https://azure.microsoft.com/free) to get free Azure credits to get started. If you're a student, you can also get free credits with [Azure for Students](https://aka.ms/azureforstudents).
 - Azure subscription with access enabled for the Azure OpenAI service. You can request access with [this form](https://aka.ms/oaiapply).
 - Azure account permissions:
