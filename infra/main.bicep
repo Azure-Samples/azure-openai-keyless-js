@@ -81,12 +81,10 @@ module openAi 'br/public:avm/res/cognitive-services/account:0.5.4' = {
     kind: 'OpenAI'
     sku: 'S0'
     customSubDomainName: '${abbrs.cognitiveServicesAccounts}${resourceToken}'
-    publicNetworkAccess: 'Enabled'
     networkAcls: {
       defaultAction: 'Allow'
       bypass: 'AzureServices'
     }
-    disableLocalAuth: true
     deployments: [
       {
         name: chatDeploymentName
