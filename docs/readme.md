@@ -10,7 +10,7 @@ products:
   - azure
   - azure-openai
   - ai-services
-urlFragment: azure-openai-keyless-ja
+urlFragment: azure-openai-keyless-js
 name: Azure OpenAI keyless deployment
 description: Example Azure OpenAI deployment and RBAC role for your user account for keyless access.
 ---
