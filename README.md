@@ -11,7 +11,7 @@
 
 :star: If you like this sample, star it on GitHub — it helps a lot!
 
-[Overview](#overview) • [Get started](#getting-started) • [Run the sample](#run-the-sample) • [Resources](#resources) • [Troubleshooting](#troubleshooting)
+[Overview](#overview) • [Get started](#getting-started) • [Run the sample](#run-the-sample) • [Resources](#resources) • [Guidance](#guidance)
 
 </div>
 
@@ -70,7 +70,7 @@ You will also need to have [Docker](https://www.docker.com/products/docker-deskt
   - Your Azure account must have `Microsoft.Authorization/roleAssignments/write` permissions, such as [Role Based Access Control Administrator](https://learn.microsoft.com/azure/role-based-access-control/built-in-roles#role-based-access-control-administrator-preview), [User Access Administrator](https://learn.microsoft.com/azure/role-based-access-control/built-in-roles#user-access-administrator), or [Owner](https://learn.microsoft.com/azure/role-based-access-control/built-in-roles#owner). If you don't have subscription-level permissions, you must be granted [RBAC](https://learn.microsoft.com/azure/role-based-access-control/built-in-roles#role-based-access-control-administrator-preview) for an existing resource group and [deploy to that existing group](docs/deploy_existing.md#resource-group).
   - Your Azure account also needs `Microsoft.Resources/deployments/write` permissions on the subscription level.
 
-### Cost estimation
+### Costs
 
 Pricing varies per region and usage, so it isn't possible to predict exact costs for your usage.
 However, you can use the [Azure pricing calculator](https://azure.com/e/43c784eb696e40fb9875c809da1c82cd) for the resources below to get an estimate.
@@ -115,7 +115,19 @@ Here are some resources to learn more about Azure OpenAI and related technologie
 
 You can also find [more Azure AI samples here](https://github.com/Azure-Samples/azureai-samples).
 
-## Troubleshooting
+## Guidance
+
+### Region availability
+
+This template uses model `gpt-35-turbo (2024-02-01)` which may not be available in all Azure regions. Check for [up-to-date region availability](https://learn.microsoft.com/azure/ai-services/openai/concepts/models#standard-deployment-model-availability) and select a region during deployment accordingly.
+
+We recommend using `East US 2` if you're unsure of which region to choose.
+
+### Security
+
+This template has [Managed Identity](https://learn.microsoft.com/entra/identity/managed-identities-azure-resources/overview) built in to eliminate the need for developers to manage these credentials. Applications can use managed identities to obtain Microsoft Entra tokens without having to handle any secrets in the code. Additionally, we're using [Microsoft Security DevOps GitHub Action](https://github.com/microsoft/security-devops-action) to scan the infrastructure-as-code files and generates a report containing any detected issues.
+
+### Troubleshooting
 
 If you have any issue when running or deploying this sample, please check the [troubleshooting guide](./docs/troubleshooting.md). If you can't find a solution to your problem, please [open an issue](https://github.com/Azure-Samples/azure-openai-keyless-js/issues) in this repository.
 
