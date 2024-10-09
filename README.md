@@ -119,7 +119,7 @@ You can also find [more Azure AI samples here](https://github.com/Azure-Samples/
 
 ### Region availability
 
-This template uses model `gpt-35-turbo (2024-02-01)` which may not be available in all Azure regions. Check for [up-to-date region availability](https://learn.microsoft.com/azure/ai-services/openai/concepts/models#standard-deployment-model-availability) and select a region during deployment accordingly.
+This template uses model `gpt-35-turbo (0613)` which may not be available in all Azure regions. Check for [up-to-date region availability](https://learn.microsoft.com/azure/ai-services/openai/concepts/models#standard-deployment-model-availability) and select a region during deployment accordingly.
 
 We recommend using `East US 2` if you're unsure of which region to choose.
 
