@@ -83,6 +83,7 @@ Here are some resources to learn more about the technologies used in this sample
 
 - [OpenAI Node.js SDK](https://github.com/openai/openai-node)
 - [Serverless AI Chat sample](https://github.com/Azure-Samples/serverless-chat-langchainjs)
+- [Generative AI with JavaScript](https://github.com/microsoft/generative-ai-with-javascript)
 - [Generative AI For Beginners](https://github.com/microsoft/generative-ai-for-beginners)
 - [Azure OpenAI Service](https://learn.microsoft.com/azure/ai-services/openai/overview)
 - [Chat + Enterprise data with Azure OpenAI and Azure AI Search](https://github.com/Azure-Samples/azure-search-openai-javascript)
