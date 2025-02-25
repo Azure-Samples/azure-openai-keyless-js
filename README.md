@@ -6,6 +6,7 @@
 # Azure OpenAI keyless deployment
 
 [![Open project in GitHub Codespaces](https://img.shields.io/badge/Codespaces-Open-blue?style=flat-square&logo=github)](https://codespaces.new/Azure-Samples/azure-openai-keyless-js?hide_repo_select=true&ref=main&quickstart=true)
+[![Learn Azure Managed Identity](https://img.shields.io/badge/Learn-Tutorial-6F8FAF?style=flat-square&logo=microsoft)](https://learn.microsoft.com/training/modules/intro-azure-openai-managed-identity-auth-javascript/)
 [![Watch to learn more about GenAI with JS on YouTube](https://img.shields.io/badge/YouTube-d95652.svg?style=flat-square&logo=youtube)](https://www.youtube.com/playlist?list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk)
 ![Node version](https://img.shields.io/badge/Node.js->=20-3c873a?style=flat-square)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
@@ -132,6 +133,8 @@ We recommend using `East US 2` if you're unsure of which region to choose.
 ### Security
 
 This template has [Managed Identity](https://learn.microsoft.com/entra/identity/managed-identities-azure-resources/overview) built in to eliminate the need for developers to manage these credentials. Applications can use managed identities to obtain Microsoft Entra tokens without having to handle any secrets in the code. Additionally, we're using [Microsoft Security DevOps GitHub Action](https://github.com/microsoft/security-devops-action) to scan the infrastructure-as-code files and generates a report containing any detected issues.
+
+You can Learn more about using Managed Identity with Azure OpenAI in this [tutorial](https://learn.microsoft.com/training/modules/intro-azure-openai-managed-identity-auth-javascript/).
 
 ### Troubleshooting
 
